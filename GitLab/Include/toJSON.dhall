@@ -1,14 +1,14 @@
 let Prelude = ../Prelude.dhall
 
-let Map = Prelude.Map
-
-let JSON = Prelude.JSON
-
 let Include = ./Type.dhall
 
 let Rule = ../Rule/package.dhall
 
 let dropNones = ../utils/dropNones.dhall
+
+let Map = Prelude.Map
+
+let JSON = Prelude.JSON
 
 let Include/toJSON
     : Include → JSON.Type
@@ -16,7 +16,13 @@ let Include/toJSON
         let everything
             : Map.Type Text (Optional JSON.Type)
             = toMap
-                { local =
+                { artifact =
+                    Prelude.Optional.map
+                      Text
+                      JSON.Type
+                      JSON.string
+                      include.artifact
+                , local =
                     Prelude.Optional.map
                       Text
                       JSON.Type
@@ -24,6 +30,8 @@ let Include/toJSON
                       include.local
                 , file =
                     Prelude.Optional.map Text JSON.Type JSON.string include.file
+                , job =
+                    Prelude.Optional.map Text JSON.Type JSON.string include.job
                 , remote =
                     Prelude.Optional.map
                       Text

@@ -1,8 +1,8 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
 let When = ./Type.dhall
+
+let JSON = Prelude.JSON
 
 let When/toJSON
     : When → JSON.Type

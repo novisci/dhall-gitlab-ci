@@ -1,11 +1,7 @@
 {- Right biased on conflict but prefers Some to None and merges lists and maps -}
-let Prelude = ../../Prelude.dhall
-
 let Job = ./Type.dhall
 
 let Image = ../Image/package.dhall
-
-let Script = ../Script/package.dhall
 
 let Service = ../Service/package.dhall
 

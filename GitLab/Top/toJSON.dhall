@@ -1,9 +1,5 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
-let Map = Prelude.Map
-
 let Top = ./Type.dhall
 
 let Job = ../Job/package.dhall
@@ -17,6 +13,10 @@ let Defaults = ../Defaults/package.dhall
 let GitSubmoduleStrategy/toJSON = ../GitSubmoduleStrategy/toJSON.dhall
 
 let dropNones = ../utils/dropNones.dhall
+
+let JSON = Prelude.JSON
+
+let Map = Prelude.Map
 
 let stringsArray
     : List Text → JSON.Type

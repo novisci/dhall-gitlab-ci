@@ -1,14 +1,14 @@
 let Prelude = ../Prelude.dhall
 
+let Kubernetes = ./Type.dhall
+
+let dropNones = ../utils/dropNones.dhall
+
 let Map = Prelude.Map
 
 let JSON = Prelude.JSON
 
-let Kubernetes = ./Type.dhall
-
 let Optional/map = Prelude.Optional.map
-
-let dropNones = ../utils/dropNones.dhall
 
 let Kubernetes/toJSON
     : Kubernetes → JSON.Type

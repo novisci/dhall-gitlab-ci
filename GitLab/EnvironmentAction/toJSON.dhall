@@ -1,8 +1,8 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
 let EnvironmentAction = ./Type.dhall
+
+let JSON = Prelude.JSON
 
 let EnvironmentAction/toJSON
     : EnvironmentAction → JSON.Type

@@ -1,5 +1,3 @@
-let Prelude = ../Prelude.dhall
-
 let Service = ../Service/Type.dhall
 
 let CacheSpec = ../CacheSpec/Type.dhall

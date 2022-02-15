@@ -1,1 +1,1 @@
-./../Prelude.dhall
+../Prelude.dhall

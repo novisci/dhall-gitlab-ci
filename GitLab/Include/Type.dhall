@@ -1,8 +1,10 @@
 let Rule = ../Rule/Type.dhall
 
 let Include =
-      { local : Optional Text
+      { artifact : Optional Text
+      , local : Optional Text
       , file : Optional Text
+      , job : Optional Text
       , remote : Optional Text
       , template : Optional Text
       , rules : List Rule

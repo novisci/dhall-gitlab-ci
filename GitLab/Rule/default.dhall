@@ -1,8 +1,8 @@
 let Prelude = ../../Prelude.dhall
 
-let Map = Prelude.Map.Type
-
 let When = ../When/Type.dhall
+
+let Map = Prelude.Map.Type
 
 in    { `if` = None Text
       , when = None When

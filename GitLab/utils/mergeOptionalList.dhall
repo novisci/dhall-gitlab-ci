@@ -1,6 +1,4 @@
 -- Merge optionals. When both are Some, merge the lists
-let Prelude = ../../Prelude.dhall
-
 let mergeOptional = ./mergeOptional.dhall
 
 let mergeOptionalList

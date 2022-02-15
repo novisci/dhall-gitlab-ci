@@ -1,8 +1,8 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
 let TriggerStrategy = ./Type.dhall
+
+let JSON = Prelude.JSON
 
 let TriggerStrategy/toJSON
     : TriggerStrategy → JSON.Type

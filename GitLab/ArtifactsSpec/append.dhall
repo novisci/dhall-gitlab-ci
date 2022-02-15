@@ -8,8 +8,8 @@ let append
       λ(b : ArtifactsSpec) →
         { when = b.when
         , expire_in = b.expire_in
-        , reports.junit =
-            mergeOptionalRight Text a.reports.junit b.reports.junit
+        , reports.junit
+          = mergeOptionalRight Text a.reports.junit b.reports.junit
         , paths = a.paths # b.paths
         }
 

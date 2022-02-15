@@ -1,9 +1,5 @@
 let Prelude = ../Prelude.dhall
 
-let Map = Prelude.Map
-
-let JSON = Prelude.JSON
-
 let Trigger = ./Type.dhall
 
 let TriggerStrategy = ../TriggerStrategy/package.dhall
@@ -11,6 +7,10 @@ let TriggerStrategy = ../TriggerStrategy/package.dhall
 let Include = ../Include/package.dhall
 
 let dropNones = ../utils/dropNones.dhall
+
+let Map = Prelude.Map
+
+let JSON = Prelude.JSON
 
 let Trigger/toJSON
     : Trigger → JSON.Type

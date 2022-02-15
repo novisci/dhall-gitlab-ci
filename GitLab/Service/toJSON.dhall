@@ -1,14 +1,14 @@
 let Prelude = ../Prelude.dhall
 
-let Map = Prelude.Map
-
-let JSON = Prelude.JSON
-
 let Service = ./Type.dhall
 
 let dropNones = ../utils/dropNones.dhall
 
 let stringsArrayJSON = ../utils/stringsArrayJSON.dhall
+
+let Map = Prelude.Map
+
+let JSON = Prelude.JSON
 
 let Optional/map = Prelude.Optional.map
 

@@ -1,8 +1,8 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
 let GitSubmoduleStrategy = ./Type.dhall
+
+let JSON = Prelude.JSON
 
 let GitSubmoduleStrategy/toJSON
     : GitSubmoduleStrategy → JSON.Type

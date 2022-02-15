@@ -1,9 +1,5 @@
 let Prelude = ../Prelude.dhall
 
-let Map = Prelude.Map
-
-let JSON = Prelude.JSON
-
 let Environment = ./Type.dhall
 
 let EnvironmentAction = ../EnvironmentAction/package.dhall
@@ -11,6 +7,10 @@ let EnvironmentAction = ../EnvironmentAction/package.dhall
 let Kubernetes = ../Kubernetes/package.dhall
 
 let dropNones = ../utils/dropNones.dhall
+
+let Map = Prelude.Map
+
+let JSON = Prelude.JSON
 
 let Optional/map = Prelude.Optional.map
 

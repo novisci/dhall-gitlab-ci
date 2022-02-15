@@ -1,9 +1,5 @@
 let Prelude = ../Prelude.dhall
 
-let Map = Prelude.Map
-
-let JSON = Prelude.JSON
-
 let Defaults = ./Type.dhall
 
 let CacheSpec = ../CacheSpec/package.dhall
@@ -13,6 +9,10 @@ let Service = ../Service/package.dhall
 let dropNones = ../utils/dropNones.dhall
 
 let stringsArrayJSON = ../utils/stringsArrayJSON.dhall
+
+let Map = Prelude.Map
+
+let JSON = Prelude.JSON
 
 let Optional/map = Prelude.Optional.map
 

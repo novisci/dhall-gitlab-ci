@@ -1,8 +1,8 @@
 let Prelude = ../Prelude.dhall
 
-let JSON = Prelude.JSON
-
 let CachePolicy = ./Type.dhall
+
+let JSON = Prelude.JSON
 
 let CachePolicy/toJSON
     : CachePolicy → JSON.Type

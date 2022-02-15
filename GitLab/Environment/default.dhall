@@ -1,5 +1,3 @@
-let Prelude = ../Prelude.dhall
-
 let Environment = ./Type.dhall
 
 let EnvironmentAction = ../EnvironmentAction/Type.dhall

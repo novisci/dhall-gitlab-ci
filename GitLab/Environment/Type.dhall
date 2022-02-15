@@ -1,5 +1,3 @@
-let Prelude = ../Prelude.dhall
-
 let EnvironmentAction = ../EnvironmentAction/Type.dhall
 
 let Kubernetes = ../Kubernetes/Type.dhall
